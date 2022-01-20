@@ -1,0 +1,79 @@
+class="clase 1"  NOTA AQUI HABRIAN 2 CLASES NO UNA
+
+class="clase-1"  FORMA CORRECTA PARA NUMERAR O DESCRIBIR ALGO
+
+em: es relativa al tamaño de fuente de padre mas cercano
+rem: es relativa al tamaño de fuente del html (root) no del body
+
+|-1probar comportamientos grid
+
+|-a-con los border y padding margin 
+|-gap solo  filas y columnas espaciados 
+|-id tipografias en el raiz lo mas común colores
+|-variables gradientes 
+|-un id de  tipo de alineacion  el comportamiento filas o columnas ajustes por span
+
+|-2minimizando la escritura de codigo 
+ 
+si no pudiera ajustar en un contenedor complejo entonces dividir esa parte
+empezar de 0 esa parte con flex  extrayendo el problema resolviendo aparte
+||-------------escritura de codigo
+bloques  __elementos -descripcion --modificadores
+
+bloques con estos reutlizamos codigo ejemplo .bloque   
+elementos lo que va dentro y es afectado por el bloque .bloque__elementos
+
+ej:bloques->cont->lista|  elementos |->lista__item ->lista__link
+
+bloques dentro de bloques como en el ejemplo anterior 
+es como el siguiente ejemplo cont es un bloque y lista esta 
+dentro pero es otro bloque solo lo perteneciente a lista usa __
+lista__item   lista__link
+	      
+    <ol class="cont">
+
+        <ul class="lista">
+
+            <liclass="lista__item"> <a class="lista__link">elemento </a> </li>
+        </ul>
+    </ol>
+
+EJ:DESCRIBIR MEJOR EL ANTERIOR EJEMPLO  bloque__elemento-descripcion
+
+solo si quiero tener un orden visual de que contenedor esta uno dentro de
+otro especifico así cont-lista
+
+ej:bloques->cont-> cont-lista  cont-lista__item ->cont-lista__item-link
+
+los modificadores son id o clases pero bien pueden usarse de la siguiente manera
+clase="bloque --modificador"
+modificador es otra clase donde tiene algo que puede reutilizarse colores animaciones
+
+
+|-3
+|-metodologia bem probar con id caracteristicas generales con el class lo especifico
+     class.funcionelemento id tamaño,tipografia
+
+||--------------tener en cuenta para el responsive
+
+em: es relativa al tamaño de fuente de padre mas cercano
+rem: es relativa al tamaño de fuente del html (root) no del body
+
+
+https://bennettfeely.com/clippy/
+triangulo clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+trapezoide clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+paralelogramo clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+rhomb clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+
+left chevron clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+right chevron clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+
+right point clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+
+right arrow clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+
+
+close  x clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+
+message clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);

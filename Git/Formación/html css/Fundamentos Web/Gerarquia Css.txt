@@ -1,0 +1,15 @@
+ 
+estructura gerargica padres hijos
+document object model estructura de arbol
+html->head->body etc
+
+orden css gerarquia antes de aplicar un estilo 
+
+si quiero imponer un estilo !important
+|-inline en linea el estilo sobre la etiqueta 
+por importancia estilo en el elemento h1 style
+seguido por este orden 
+|-id  
+|-class
+|-type
+

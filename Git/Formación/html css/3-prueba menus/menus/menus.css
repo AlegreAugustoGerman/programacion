@@ -1,0 +1,300 @@
+body{background: #fb4;
+     display: flex; flex-wrap: wrap; }/*contenedores uno debajo del otro lo que defina el orden 
+     de cada contenedor es lo que tenga especificado cada contenedor con flex*/
+
+.conth{width: 100%; display: flex; flex-wrap: wrap;}/*si no hay espacio lo que este dentro sigue abajo*/
+
+.conth__menu{width: 100%;  background: #cccc; display: /*contenedor lista */
+            flex; justify-content: space-between; list-style: none; padding: 0;
+            
+            
+     }
+.conth__menu-elemento{ background: rgb(219, 219, 181);
+     border: 1px solid #fff; padding: 5px;
+    padding-left: 4%; padding-right: 4%;    
+    }
+    .conth__menu :hover{background: rgb(216, 170, 90); cursor: pointer;}
+
+/*DEBAJO DEL HEAD*/
+/*menu en formato lista*/
+.lista{background: khaki; width: 100%;
+     text-align: center; list-style: none ; padding: 0; 
+    }
+.lista :hover{background: rgb(216, 170, 90); cursor: pointer;}
+
+.lista-elemento{border-top: 1px solid #fff; padding: 5px;}
+
+/*MENU ABECEDARIO*/
+.abecedario{background: #fff;  border: solid 1px #000; padding:5px;
+            list-style: none; display: flex; flex-wrap: wrap;
+        width: 100%; padding: 0;  }
+/*las letras se generan por atributo no entre elementos*/
+
+.abecedario-letras{color: blue; border: solid 1px #000;
+width: 2%; padding: 1%; text-align: center;}
+/*esta vacio porque las letras no estan entre <li></li> sino como atributo
+ por type=""*/
+
+ .abecedario :hover{cursor: pointer; background: blueviolet;}
+
+/*por cada numero visualizar con un iframe  una consulta 
+de 10 en 10 elementos */
+
+ /*menu en numeracion romana*/
+.menuuno{ width:100%; background:  rgb(179, 156, 180);
+    justify-content: space-between; 
+    display: inline-flex;border: solid 1px #000;
+    
+}
+.menuuno :hover{cursor: pointer;
+     background: rgb(244, 242, 245);
+     border: solid 1px #000;
+     color: #fff;
+    }
+
+
+
+/*menu funcional*/
+
+#btn-menu{display: none;}/*desapareciendo checkbox*/
+
+/*estilos label dentro del btn menu*/
+
+#btn-menu label {display: none; z-index: 1;
+width: 30px; height: 30px; padding: 10px;
+border-right: 1px solid ; background: #fff;}
+#btn-menu label :hover{cursor: pointer; 
+    background: rgba(0, 0, 0, 0.5);}
+
+/*estilos lista debajo del checkbox*/
+.menu{display: flex;background:rgba(0,0,0,0.5);
+list-style: none;padding: 0; margin: 0; width: 100%;}
+
+.menu :hover{cursor: pointer; background: rgba(1, 1,1, 0.3);}
+
+.menu li{flex-grow: 1; border: solid 0.5px; } 
+
+.menu li a {display: block;padding: 15px 20px;
+color: #fff; text-decoration: none;}
+
+/*responsive menu no funcional */
+@media(max-width: 768px){
+    #btn-menu{display: block;} 
+
+    .menu{display: flex;flex-direction: column;
+    background:rgba(0,0,0,0.5);
+    width: 40%; text-align: center;
+    margin-left:-70%;} /*esto hace el efecto */
+    
+    #btn-menu :checked  ~  .menu{ margin-left: 0%; display:block;} /*~ no funciona */
+    #btn-menu :checked  +  .menu{ margin-left: 0%; display:block;}
+}
+
+
+/* codigo funcional checked
+    <label for="button_menu">Mostrar menu</label>
+    <input type="checkbox" id="button_menu" />
+    <div id="menu" class="menu">
+        
+    </div>
+
+#menu {
+    display:none; }
+  
+ #button_menu:checked + #menu {
+    display:block;}
+  
+ #button_menu{
+    display:none;} */
+
+/*Ejemplo funcionamiento*/
+    #menu {
+        display:block; }
+
+
+    @media(max-width: 850px){
+        #menu{margin-left:-75%; width: 50%;}
+
+     #button_menu:checked + #menu {
+    display:block; margin-left:0%;}
+    }
+
+  /*PROBANDO CSS flex cajas  */
+  .cont{display: flex; 
+   /* flex-wrap: wrap;*/ 
+     width: 100%; 
+     padding: 0; }  
+  .cont__lista{
+    /* display: flex;*/
+      width: 100%; 
+      list-style: none;}
+  .cont__lista--item{
+    flex-grow: 1;
+    text-align: center; 
+    background: #fff; 
+    border: solid 1px;}
+
+     /*PROBANDO CSS grid cajas  */
+     .cont1{
+         width: 100%; 
+         display: grid; 
+         padding: 0;}
+    .cont__lista1{
+       
+         grid-row: 1;
+         list-style: none;}
+    .cont__lista--item1{
+        border: solid 1px;
+         text-align: center;
+          background: #fff;}
+
+ /*manejo de contenedores  con grid*/  
+        .wrapper {
+            width: 100%;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr); /*tres columnas una fraccion de pantalla cada uno*/
+          grid-gap: 10px; /*espaciado entre elementos*/
+          grid-auto-rows: minmax(100px, auto);
+          text-align: center;
+          
+          
+          
+        }
+        .one {
+          grid-column: 1 / 3;
+          grid-row: 1;
+          background: rgba(0, 0, 0, 0.5);
+          
+        }
+        .two { 
+          grid-column: 2 / 4;
+          grid-row: 1 / 3;
+          background: rgba(0, 0, 0, 0.5);
+        }
+        .three {
+          grid-column: 1;
+          grid-row: 2 / 5;
+          background: rgba(0, 0, 0, 0.5);
+        }
+        .four {
+          grid-column: 3;
+          grid-row: 3;
+          background: rgba(0, 0, 0, 0.5);
+        }
+        .five {
+          grid-column: 2;
+          grid-row: 4;
+          background: rgba(0, 0, 0, 0.5);
+        }
+        .six {
+          grid-column: 3;
+          grid-row: 4;
+         /* background:linear-gradient(white,black);*/
+         background:linear-gradient(rgba(255,0,0,.8), rgba(255,0,0,0));
+        }
+ 
+
+/*usando grid acomodando imagenes con elementos de texto*/
+.galleryContainer{
+
+background: rgba(0, 0, 0, 0.5);
+width: 100%; display: grid;
+padding:0;  
+grid-template-columns: repeat(4,1fr);
+
+
+}
+/*propiedades de tabla 
+grid-column-start:span; columnas ----- span cantidad
+grid-row-start:span; filas  |  span cantidad
+grid
+*/
+.galleryContainer__list--element{list-style: none; 
+width: 100%;  
+
+
+}
+.galleryContainer__list--img{
+  
+  width: 100%;
+  object-fit: cover;
+}
+.galleryContainer__list--title{
+ 
+letter-spacing: 10px;
+text-transform: capitalize;
+font: italic;
+
+ color: #fff;  
+ border: solid 0.5px; 
+ text-align: center;
+}
+.galleryContainer__list--txt{
+margin: 0;
+overflow: hidden;
+max-height: 20%;
+ padding-right:2%;
+  max-width: 20%;
+  position:absolute;
+  color: #fff;  
+  border: solid 0.5px; 
+  text-align: center;
+  /*background:linear-gradient(  rgb(21, 119, 95),rgba(1, 1,1, 0.3));*/
+  background:linear-gradient(rgba(255,0,0,.8), rgba(255,0,0,0));
+ }
+
+ @media(min-width :320px){
+  @media(min-height :400px){
+    .galleryContainer__list--txt{
+      padding-right:17.5% ;
+      height: 20%;
+    }}}
+    @media(width :768px){
+      @media(height :400px){
+        .galleryContainer__list--txt{
+          padding:0;
+          height: 15%;
+          max-width: 19%;
+        }}}
+        @media(width :1024px){
+          @media(height :400px){
+            .galleryContainer__list--txt{
+              padding:0;
+              max-height: 24%;
+              max-width: 20.5%;
+            }}}
+            @media(width :425px){
+              @media(height :400px){
+                .galleryContainer__list--txt{
+                  padding:0;
+                  max-height: 13%;
+                  max-width: 28.5%;
+                }}}
+
+                @media(width :375px){
+                  @media(height :400px){
+                    .galleryContainer__list--txt{
+                      padding:0;
+                      max-height: 13%;
+                      max-width: 32.1%;
+                    }}}
+
+                    @media(width :1440px){
+                      @media(height :400px){
+                        .galleryContainer__list--txt{
+                          padding:0;
+                          height: 30%;
+                          width:20%;
+                          padding-right:1.8% ;
+                        }}}
+
+                        @media(width :2560px){
+                          @media(height :400px){
+                            .galleryContainer__list--txt{
+                              padding:0;
+                              height: 30%;
+                              width:20%;
+                              padding-right:1.8% ;
+                              letter-spacing: 5px;
+                            }}}
+                            

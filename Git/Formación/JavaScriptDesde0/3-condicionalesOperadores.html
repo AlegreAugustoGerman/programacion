@@ -1,0 +1,124 @@
+<!--
+OPERADOR SIGNIFICADO
+==		Igual que
+!= 		Diferente que
+>  		Mayor que
+<  		Menor que
+>= 		Mayor o igual que
+<= 		Menor o igual que
+=== 	Estrictamente igual que (comprueba también tipos)
+!== 	Estrictamente diferente que... (comprueba tipos)
+
+&&		Y lógico
+||		O lógico
+
+-->
+ 
+<html lang="en">
+<body id="cuerpo">
+<script>
+    var cuerpo=document.getElementById("cuerpo");
+    var colorWeb=prompt("Introduce el color de fondo. Azul/Verde/Rojo").toLowerCase();//toLowerCase convierte lo recibido en minuscula
+    if(colorWeb !="azul" && colorWeb != "verde" && colorWeb != "rojo"){
+        alert("Ese color no estpa contemplado");
+    }else if(colorWeb=="azul"){
+        cuerpo.style.backgroundColor="blue";
+    }
+else if(colorWeb=="verde"){
+        cuerpo.style.backgroundColor="green";
+    }
+else{
+     cuerpo.style.backgroundColor="red";}
+
+</script>    
+<p>if else if</p>
+<h3>Calculadora basica</h3>
+<script>
+var num1 = parseInt(prompt("Introduce el primer número"));
+var num2 = parseInt(prompt("Introduce el segundo número"));
+var operacion=prompt("¿Qué operación deseas Realizar? suma/resta/multiplicación/división");
+//ERROR NAN NOT NUMBER CUANDO ALGO PASO EN EL INT QUEDO  STRING NO CONVIRTIO ETC, INTENTA SUMAR ALGO QUE NO ES INT CON UN INT
+if(!isNaN(num1) && !isNaN(num2)){ 
+
+if(operacion==="suma" || operacion==="SUMA"){alert(num1+num2);
+}
+else if(operacion==="resta" || operacion==="RESTA" ){alert (parseInt(num1)-parseInt(num2));
+}
+else if (operacion==="multiplicacion" || operacion==="multiplicación" ||
+ operacion==="MULTIPLICACION" || operacion==="MULTIPLICACIÓN"){
+     alert(parseInt(num1)*parseInt(num2));
+ }
+ else if (operacion==="division" || operacion==="división" ||
+ operacion==="DIVISION" || operacion==="DIVISIÓN"){
+     alert(parseInt(num1)/parseInt(num2));
+ }
+else{alert("Esa Operación Aaritmetica No Esta Disponible");}
+
+}else{alert("Por Favor Ingrese numeros para la Operación no Ingrese Letras,Simbolos Etc");}
+</script>
+<p>while</p>
+<h3>meses del año recorrer array</h3>
+<script>
+    var meses=new Array["Enero","Febrero","Marzo","Abril","Mayo","Junio",
+    "Julio","Aagosto","Septiembre","Octubre","Nobiembre","Dieciembre"];
+
+    var contador=0;
+    while(contador<meses.length){
+        document.write("el mes : "+ meses[contador]);
+        contador++;
+    }
+</script>
+
+
+<h3>Juego Adivina el numero</h3>
+<input type="text"   id="c_mensaje">
+<input type="text"   id="c_intentos">
+
+<script>
+//Math.random(); porque no estoy utilizando asi directamente 
+//porque podría generar un numero decimal entre 0 y uno 
+//al no ser entero habrian problemas de ejecucón por eso para correr
+//una coma se lo multiplica por 100  Math.random()*100 pero sigue
+//siendo decimal como lo paso a entero ? con el metodo round 
+//que sirve para redondear un valor numerico
+var aleatorio=Math.round(Math.random()*100);
+var minum,intentos;
+minum=0;
+intentos=0;
+var mensaje=document.getElementById("c_mensaje");
+var intentos_consumidos=document.getElementById("c_intentos");
+do{
+    minum=parseInt(prompt("Introduce un numero entre 0 y 100"));
+    if(aleatorio>minum){
+        mensaje.value="Más Alto";
+        mensaje.style.fontSize="18px";
+    }
+    if(aleatorio<minum){
+        mensaje.value="Más bajo";
+        mensaje.style.fontSize="18px";
+    }
+    intentos++;
+
+    intentos_consumidos.value=intentos;
+    intentos_consumidos.style.fontSize="18px";
+    intentos_consumidos.style.color="red";
+    intentos_consumidos.style.textAlign="center";
+}while(aleatorio!=minum);
+</script>
+<p>while + for</p>
+<h3>Registro llegada Empleados</h3>
+ <script>
+var Trabajadores=new Array();
+var persona="";
+var contidad=0;
+while(persona !="salir" || persona !="SALIR"){
+    persona=prompt("Introduce Tu Nombre Trabajador");
+    Trabajadores[cantidad]=persona;
+    cantidad++;}
+Trabajadores.pop(); //eliminar el ultimo del array que sería salir 
+for(var i=0;i<Trabajadores.length;i++){
+    document.write(Trabajadores[i]+"<br>");
+}
+ </script>
+</body>
+</html>

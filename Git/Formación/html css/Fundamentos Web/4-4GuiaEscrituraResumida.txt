@@ -1,0 +1,31 @@
+		elemento tag etiqueta es lo mismo
+
+	nombrar con identificador o clase a un elemento
+etiqueta#nombredeid   ----->>>	<header id="nombreid"></header>
+etiqueta.nombredeclass----->>>  <header class="nombreclass"></header>
+
+	asignar un texto a una etiqueta entre su apertura y cierre
+header{<>textoEntre</>}----->>> <header><>textoEntre</></header>
+
+	escribir un elemento y un atributo 
+a[href] 	      ----->>>  <a href=""></a>
+
+	escribir un elemento despues de otro 
+h1/br/li	       ---->>>  <h1><br><li></li>
+
+	asignar identificadores o clases
+h1.titulo/br#salto/li.elemento----->>>  <h1 class="titulo"><br id="salto"><li class="elemento"></li>
+
+	utilizando todo lo anterior
+h1.titulo[name]{Gran Texto}/br----->>>  <h1 class="titulo" name="">Gran Texto<br>
+
+
+	para escribir {} para nombrar .lista__elemento por cantidad *10
+li{elemento}.lista__elemento*10 ----->>><li class="lista__elemento">elemento</li>
+
+li[type="A"].abecedario-letras*26------>>><li type="A" class="abecedario-letras"></li>
+
+		ul dentro 5 li con a entre etiqueta li y a el texto menú
+ul.menu>li*5>a{Menú}----->>>  <ul>  <li><a href="">Menú</a></li>*5  </ul>
+elemento1>elemento2    lo que ira dentro del elemento 1 despúes de >
+si quisiera otro elemento despues usaria +

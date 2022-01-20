@@ -1,0 +1,38 @@
+si quiero un respaldo de codigo completo de un punto especifico
+copio la carpeta git en otro sitio y listo
+
+para ocuparlo si necesitara hacerlo dejar donde debe estar la carpeta
+en consolar escribir desde la rama master git reset --hard
+--------------------------------------------------------------
+por default se crea la rama principal  *master
+crear nueva rama git branch nombrerama
+para ver la rama git branch
+---------------------------------------------------------------
+ver rama que estemos git status
+
+hacer commit guardar 
+git commit -am "se agrego tal cosa en tal sitio"
+commit -a  referencia a add  m a comentario dentro del commit
+---------------------------------------------------------------
+git log --oneline    ver lista de cambios 
+---------------------------------------------------------------
+moverse a otra rama 
+git checkout nombre rama
+---------------------------------------------------------------
+fusionar  ramas sus ultimos estados commit
+ir a donde quiero fusionar  
+git checkout master
+ahora cual voy a fusionar
+git merge redes-sociales 
+despues de enter puedo dejar un texto de que hice:    
+se unieron las redes socialesy atencion al cliente
+
+ver si funcionaron los cambios
+git log --oneline
+----------------------------------------------------------------
+
+
+
+
+            
+

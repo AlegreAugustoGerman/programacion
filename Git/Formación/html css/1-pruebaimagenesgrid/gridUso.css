@@ -1,0 +1,110 @@
+body{
+    background: #fb4;
+
+}
+.contenedor{
+    display: grid;
+    grid-template-columns:repeat(auto-fill,minmax(10%,100%));
+    gap:1%;
+    grid-auto-rows: 100%;
+    
+     
+}
+
+.contenedor div{
+    width: 100%;
+    height: 100%;
+    
+    
+}
+/*por pantalla queda claro el efecto de
+varias propiedades de elementos iguales 
+pero con diferentes propiedades*/
+
+.contenedor :nth-child(1) {
+    /*no olvidar especificar a que me refiero 
+    :nth-child(1) img  o quedara ese top horrible
+    */
+    grid-column: 1 /span 2;
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.contenedor :nth-child(10){
+ grid-column: 5/span 4;
+ background: rgba(0, 0, 0, 0.5); 
+ grid-row:1/span 3;  
+}
+
+.contenedor :nth-child(4){
+    background-image: url(/Supermercado/Super/comprando.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:50% -10%;
+
+    grid-column: 1/span 1;
+    grid-row: 2/span 1;
+
+
+     
+}
+.contenedor :nth-child(5){
+/*         posicion  / tamaño
+           row/column/row/column    */
+    grid-area:2/ 2 / span 1/span 2;
+    background: saddlebrown;
+}
+
+.contenedor :nth-child(11){
+    background-image:url(/Supermercado/Super/lacteos.jpg),url(/Supermercado/Super/Verduleria.jpg),
+    url(/Supermercado/Super/vinos.jpg),url(/Supermercado/Super/embutido.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column: 1/span 10;
+    grid-row:3/span 1;
+    background: rgba(0, 0, 0, 0.4);  
+}
+
+
+
+.contenedor :nth-child(2) img{
+     
+    width: 100%;
+    height: 100%;}
+
+.contenedor :nth-child(3) img{
+object-fit: cover;
+width: 100%;
+height: 100%;}
+
+.contenedor :nth-child(9){
+    font-family:italic ;
+    font-size: 10px;
+    background-image: url(/Supermercado/Super/Verduleria.jpg);
+    -webkit-background-clip: text;
+    color: gold;
+    -webkit-text-fill-color:transparent;
+    
+     
+}
+ 
+
+/*
+ajustar los espacios en blanco generados por 
+elementos grid columna grid-auto-flow:column dense;
+
+ajustar los espacios en blanco generados por 
+elementos grid fila grid-auto-flow:row dense;
+
+si se deforman al ajustarse a su contenedor imagenes
+object-fit: cover;
+
+para escalar imagenes a tamaño de contenedor
+background-size: content; 
+
+si quiero ajustar con minimos y maximos los
+grid-template-columns:repeat(auto-fill,minmax(10%,100%));
+*/

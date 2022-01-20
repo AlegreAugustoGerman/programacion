@@ -1,0 +1,58 @@
+se declara como si fuese una funcion en un arreglo se declara el estate y se lo nombra
+Use state dentro se inicializa las variables titulo,subtitulo,cuenta se accede por state
+no por props en el caso de lo funcional el metodo render  siempre actualiza al realizar
+cambio en el state de sus propiedades "variables".
+
+
+function nombre (props){
+const[state,setState]=UseState({
+titulo:"",
+subtitulo:"",
+cuenta:1
+});
+
+return(
+<p>{state.titulo}</p>
+<p>{state.subtitulo}</p>
+<p>{state.cuenta}</p>
+);
+}
+
+
+como se aplica con funciones en eventos ?
+
+
+function nombre (props){
+const[state,setState]=UseState({
+titulo:"",
+subtitulo:"",
+cuenta:1
+});
+
+const disminuir =()=>{
+ setState({
+	if (state.cuenta <= 0){
+	setState({
+	...state,cuenta:0
+	});
+			}else{setState({...state,cuenta:state.cuenta - 1}); }
+	});
+}
+
+const aumentar =()=>{
+ setState({
+	...state,cuenta:state.cuenta + 1
+	});
+}
+
+return(
+<p>{state.titulo}</p>
+<p>{state.subtitulo}</p>
+<button onClick={disminuir}>-</button>
+<button onClick={aumentar}>+</button>
+<p>{state.cuenta}</p>
+);
+}
+
+solo cambia que no se utiliza como props aunque se podría  y me ahorro utilizar y especificar
+el this , bind  pero aún no están los hooks al igual que los componentes de clases son mas limitados

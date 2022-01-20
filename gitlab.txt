@@ -1,0 +1,138 @@
+c:/Users/L2K49/.git/
+git --version    controlar version instalada
+git config --global user.name ""  asignar usuario
+git config --global user.name     consultar ver valor
+git config global user.name ""    reasignar correo sin --global dentro de la carpeta de ese proyecto
+git config --global user.email "" asignar email
+git config --global user.email    consultar email
+git config global user.email ""   reasignar correo sin --global dentro de la carpeta de ese proyecto
+git init                          crear carpeta enlaze a bdd de gitlab
+git gelp config                   ver ayuda de git comandos
+ls -a                             ls muestra las carpetas y el -a para mostrar todos los archivos incluyendo ocultos 
+ config
+
+
+git status                        ver el estado del proyecto
+
+cada archivo de nuestro repositorio puede tener dos estados rastreados y sin rastrear 
+sin rastrear archivo nombre en rojo 
+
+git tiene 3 zonas por donde pasan nuestros proyecto 
+directorio de trabajo    area de preparacion    directorio de git
+rojo                       verde                  blanco
+
+para pasar al area de preparación hacemos lo siguiente
+git add readme.md
+git status                          revisamos estatus en verde el nombre 
+new file:readme.md                  esta linea en verde  representando una version del proyecto 
+
+ahora en la terminal indicamos el area de preparacion  para confirmar que estos
+archivos del area de preparacion formaran parte de el historial de nuestro proyecto 
+entonces ejecutamos 
+git commit                          movemos del area de preparacion al directorio de git                                            
+
+ahora aparece otro formato ventana llamado bin  en donde solo se aprieta i de iglesia
+y entrar en modo de insercion de bin  abajo aparecera insertar  escribimos nuestro 
+mensaje descriptivo de la version pulsamos escape salimos del modo insercion 
+despues escribimos :wq en minusculas entonces estamos diciendo bin guarda los cambios
+y asocia a la version de proyecto confirmada  entonces si ejeturamos git status el directorio
+estaria limpio  pero no quiere decir que hemos enviado el archivo al directorio de git solo significa
+que no hay cambios desde la ultima version confirmada si cambiaramos algun archivo 
+
+git dift                           ver que cambio se realizo por ultimo al archivo signo + lo ultimo
+
+
+mover los archivos de oreoaracuib al directorio de git se le llama hacer commit 
+
+git add readme.md
+git status
+git commit  
+
+
+como tener archivos usados para pruebas para que git los ignore  y evitar hacer commit con ellos
+accidentalmente  creamos dentro de la carpeta del proyecto el archivo .gitignore en el cual
+nombramos los archivos que sean de prueba que no queremos que aparezcan  siempre es mas facil
+separar por carpetas y solo escribir el nombre de esas carpetas para omitir 
+git status                           ya no muestra  lo ignorado 
+pero pero sigue siendo parte del proyecto por lo que hacemos un commit al .gitignore
+
+entonces ahora podemos agregar y editar lo que queramos en test sin temor de equivocarnos 
+
+
+ ahora ver el historial de los commit del mas reciente al mas antiguo que muestra
+el hash del commit el autor y la fecha y el mensaje que dejamos cuando establecimos ese
+commit en cada uno de ellos 
+
+git log --oneline                   --online ver el historial abreviado cada commit tendra un id
+
+para poder seleccionar uno y verlo  se hace lo siguiente
+
+git checkout idcommit                ahora saltamos a como estaban los archivos en ese entonces
+
+si usaramos git log podemos asustarnos al no tener el resultado inicial pensar que se perdieron
+pero  si quisieramos ver todos los commit escribiriamos
+
+git --all                             mostrara todo el historial
+
+podemos usar multiples banderas a la vez  ejemplo usar las dos banderas que ya conocemos
+sería así.
+git --all --oneline                   todo el historial resumiedo el numero como id se llama hash
+
+podemos saber en que posicion de hash id del commit que estamos parados porque figurara como head 
+en verde y como master donde nos quedamos por ultima vez para volver al ultimo punto  git checkout idcommithash
+entonces veremos que quedaremos en el guardado por ultima vez  o git chekout master por si no recordamos
+el numero de hash 
+
+
+COMO SACAR ARCHIVO DEL AREA DE PREPARACION 
+ejemplo 
+git add index.html                     agregamos por error como lo quitamos de el area de preparacion
+git status                             vemos que esta en area de preparacion para pasar como commit
+git reset HEAD index.html              listo lo quitamos del area de preparacion
+git status                             lo veremos en rojo
+
+
+RAMA DE GIT   por defecto se llama master
+pero que es ?   es un apuntador que irá moviendo con las confirmaciones que vayamos haciendo 
+commit entonces master apunta a un commit para ver las diferentes ramas de nuestro repositior escribimos
+
+git branch                              indica con un asterisco a la izquierda en cual estamos ubicados
+
+un repositorio puede tener multiples ramas  no es necesario que la principal se llame master y podriamos
+tener  varias ramas apuntando al mismo commit  ¿como crear ramas nuevas?
+
+git branch nombredelanuevarama 
+
+entonces si escribimos git bramch veremos todas las ramas del proyecto como una lista para cambiar de
+rama con git checkout nombrederama 
+
+ahora para controlar usamos git status porque dice en que rama nos encontramos y si hay algun archivo
+para enviar a preparacion o no para futuros commit entonces
+como vemos donde esta cada cosa sus modificaciones y que branch apunta
+a cada uno ? 
+
+git log                                muestra branch con sus commit descripcion detallada
+
+ahora explicar las bandera agregadas 
+
+git log --oneline --all --decorate --graph  --oneline ver los commit uno por linea 
+                                            --all para que muestre todo commit sin importar en que rama estemos
+                                            --decorate muestra el commit con su correspondiente rama
+                                            --graph  nos dibuje el grafico del historial en codigo ascii                     
+
+al crear una rama esta señala un commit  en cual nos encontrabamos al momento de crearla 
+
+
+BORRAR RAMA
+git branch -d
+
+
+
+
+
+
+
+
+  
+
+

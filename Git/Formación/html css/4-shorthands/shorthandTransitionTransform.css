@@ -1,0 +1,44 @@
+.section-shorthand{display: flex;border: solid;justify-content: space-between;}
+
+.list__section-shorthand{padding: 0;margin: 0;list-style: none;width:33.4em; }
+
+.item__list-shorthand{text-align: center; color: white;}
+.list__section-shorthand:nth-child(1) .item__list-shorthand:nth-child(1){background: #fb4;transition:width 4s;}
+.list__section-shorthand:nth-child(2) .item__list-shorthand:nth-child(1){background: #000;}
+.list__section-shorthand:nth-child(3) .item__list-shorthand:nth-child(1){background: #fb4;}
+
+.list__section-shorthand:nth-child(1) .item__list-shorthand:nth-child(1):hover{width:17.4em;}
+
+ 
+
+/*para lo siguiente debo hacer que cuando el cursor este sobre un contenedor
+los 3 elementos contenidos   seleccionados cada uno dentro de ese hover con 
+ntchild que hara cada uno  pero eso no funcionaria  
+
+.list__section-shorthand:nth-child(2) .item__list-shorthand:nth-child(1):hover{
+    .list__section-shorthand:nth-child(3) .item__list-shorthand:nth-child(1){background: white;}
+}   */
+
+
+/*si hover al contenedor dentro 3 elementos por estar en el contenedor dar comportamientos a los
+3 */
+
+.section-shorthand:nth-child(2){
+padding: 0;margin: 0;list-style: none; width: 100%;}
+
+.section-shorthand:nth-child(2) .item__section-shorthand:nth-child(1){background: #fb4;transition:width 4s;}
+.section-shorthand:nth-child(2) .item__section-shorthand:nth-child(2){background: #000;transition:width 4s;}
+.section-shorthand:nth-child(2) .item__section-shorthand:nth-child(3){background: #fb4;transition:width 4s;}
+ 
+.section-shorthand:nth-child(2) .item__section-shorthand:nth-child(1):hover{width:17.4em;}
+.section-shorthand:nth-child(2) .item__section-shorthand:nth-child(2):hover{width:17.4em;}
+.section-shorthand:nth-child(2) .item__section-shorthand:nth-child(3):hover{width:17.4em;}
+
+
+ 
+.slide:focus,.slide:hover{box-shadow:inset 7em 0 0 0 var(--hover)}
+.slide{--color:#8fc866;--hover:#66c887}
+button{color:var(--color);transition:.25s}
+button{ border:2px solid;  margin:.5em;padding:1em 2em}
+
+

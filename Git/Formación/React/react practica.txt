@@ -1,0 +1,32 @@
+siempre tener en cuenta que al tratarse de componentes de clases y funcionales en sintaxys se parece
+a otros lenguajes pero que no siempre es igual si yo quiesiera hacer algo nuevo como react sería
+tomando el sifnificado como piezas  para poder hybridar en codigo  programacion funcional y objeto
+de base con function,this en esencia son muy parecidos y en situaciones lo mismo pero potencialmente 
+pueden ser mucho mas
+
+
+
+
+
+
+
+
+
+
+cambiar Información dentro de componentes
+unicamente por state cualquier  no es recomendable 
+
+pasar props a componentes ademas de agregar
+en el index  es declarando const {}
+agregar de igual forma que en el index pero
+llamar como si fuera destructuración ...nombre
+dentro de la etiqueta componente
+
+
+bin una referencia por parametros acepta un objeto o función
+con respecto al this de la clase siendo un metodo no funciona con el this
+puesto que como algunas lineas de sintaxys son nuevas en como declarar el component
+de la vieja manera no es necesario pero de la nueva si es necesario referenciar que 
+ese metodo existe dentro de la clase
+
+

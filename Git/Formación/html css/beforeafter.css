@@ -1,0 +1,45 @@
+body{
+
+}
+.cont-esfera{
+width: 100%;
+height: 30%;
+background: linear-gradient(to bottom right,white,teal,black 100%, teal);
+}
+.esfera{
+width: 200px;
+height: 200px;
+border-radius: 50%;
+ margin: auto;
+ background: linear-gradient(to bottom right,white,teal,black 81%, teal);
+}
+
+.cont-esfera-ab{
+width: 100%;
+height: 20%;
+}
+.esfera-ab{
+
+width: 200px;
+height: 200px;
+border-radius: 50%;
+ margin: auto;
+ background: linear-gradient(to bottom right ,white,teal,black 90%, teal);
+}
+.esfera-ab:after{content:"";
+width: 150px;
+height: 15px;
+background: #000;
+position: absolute;
+bottom: 0;
+top: 70%;
+left: 45%;
+border-radius: 50%;
+box-shadow: 0 0 10px 10px #000;
+opacity: 0.8;
+z-index: -1;
+}
+
+
+
+

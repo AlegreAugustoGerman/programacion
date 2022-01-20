@@ -1,0 +1,91 @@
+elementos 
+ul  lista desordenada      type"circle","square"    circulo cuadrado 
+ol  lista ordenada	   type"a",           sin el tipe numera elementos colocando"a" orden alfabetico  con i numeración romana
+
+-----------------------------------------------------
+<html lang="es-ar"        indica elemento html atributo lang indicar la geolocalización con valor "es-ar"
+<meta charset="iso-8859-1">  indica elemento meta atributo charset indicar valor de idioma caracteres español ingles portugues frances "iso-8859-1"
+-----------------------------------------------------
+<a href"vinculo" title"nombre" target"_blank">
+atributo target"" valor predeterminado "_self"
+-----------------------------------------------------
+si en el form no hay enctype="multipart/form-data"
+no se podria utilizar multiple 
+
+form atributo enctype="multipart/form-data" 
+input  atributo  multiple
+Ej:
+<form method"" action="" enctype="">
+<label>Adjunto: 
+<input type="file" multiple><input/>
+</label><br>
+|
+|
+Botones enviar formularios
+buscan el archivo del action 
+<input type="submit" value="enviar">
+<input type="image" src="direccion" alt="Enviar">
+<button>Enviar<button/>
+
+Boton borrar 
+<input type="reset" value="borrar">
+
+Boton no hace nada sin javascript
+<input type="button" onclick="alert('Click');" value="Hacer Click"> 
+-----------------------------------------------------
+es un atributo booleano html checked 
+funciona como seleccionador de un valor de las opciones para asignar un 
+valor claro que es para inicializar el usuario al tildar otra opcion se 
+destilda el campo que tenia inicialmente el checked
+
+grupo de radios con el mismo name para seleccionar uno de los 3 como en genero m o f
+<input type="radio"  name="letra" value="a" checked>
+<input type="radio"  name="letra" value="b">
+<input type="radio"  name="letra" value="c">
+
+diferente del selected que solamente el selected
+posee el name conteniendo entre su etiqueta varios
+options con values diferentes
+<selected name="nombre"><option value="sadsa" checked>javier</option>
+<option value="correcto">sdsadsa</option></selected>
+
+NOTA: size="" multiple  | size para el numero de opciones 
+y multiple para poder marcar mas de una como resultado 
+marcar varias opciones.
+
+<selected name="estudia" size="2" multiple>
+<option value="html" checked>html</option>
+<option value="css">css</option></selected>
+-----------------------------------------------------
+datetime-local  tambien ay que enviar un value="" con un valor de fecha en formato
+autofocus en un campo principal  cuidado al usar si se usa en varios formularios
+Atributos Validacion 
+en atributo como type para valores utiles como password,email,search,tel,datetime-local,color que respete el formato declarado 
+tambien por min="" max="" se utilizan  pattern=""  require
+si quiero que se rellene el campo obligatoriamente utilizando el tipe="" require
+
+para guiar al usuario con el formato deseado  con title="nnnn-nn-nn-nn" al usar pattern
+-----------------------------------------------------
+Tablas etiqueta titulo   th,td tiene valor semantico 
+<caption>titulo<caption/>
+
+predeterminadamente centrado en la tabla evitando usar un h1,h2,h3 
+-----------------------------------------------------
+frameborder="none" propiedad de iframe para quitar los bordes
+varias opciones para cargar secciones de pagina definidas Ej:
+
+<a href="servicios.html" title="Vinculo a Marco" target="marco">mostrar marco</a> este vinculo se carga target="marco"
+<iframe name="marco" style="border:none width:200px; height:200px;"> </iframe>    en este marco definido name="marco"
+
+porque aprobechamos <a href="servicios.html" en donde esta lo que se tendra que cargar en ese espacio 
+para visualizar una segunda opcion que haga lo mismo hacemos :
+
+<a href="servicios1.html" title="Vinculo a servicio1" target="marco">mostrar marco1</a>
+
+lo curioso es que al iniciar la pagina como el usuario no eligio aún no hay nada en ese recuadro 
+solo se ven las opciones a menos que para maquestar use un background para visualizar el espacio y 
+organizar, entonces para visualizar lo que hago es agregar un src al iframe para que tenga un valor
+inicial al cual apuntar.
+
+<iframe src="servicios.html" name="marco" style="border:none width:200px; height:200px;"> </iframe>
+-----------------------------------------------------

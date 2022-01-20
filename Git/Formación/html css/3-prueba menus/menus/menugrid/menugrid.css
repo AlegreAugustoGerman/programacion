@@ -1,0 +1,56 @@
+body{
+    max-height: 100vh;
+    background:#fb4 ;
+    display: grid;
+   /* grid-template-columns:repeat(3,1fr);
+    grid-auto-rows: minmax(100%);*/
+
+    grid-template-columns:
+    repeat(auto-fill,minmax(10%,100%));
+    gap:1%;
+    grid-auto-rows: 100%; 
+    padding: 0;
+    margin: 0;
+    grid-template-areas:
+    "head"
+    "main"
+    "main"
+    "articule"
+    "aside"
+    "foot";
+}
+
+.head{
+background: rgba(0, 0, 0, 0.3);
+grid-area: head;
+}
+.main{
+    background: rgba(0, 0, 0, 0.3);
+    grid-area: main;
+}
+.articule{background: rgba(0, 0, 0, 0.3);
+    grid-area: articule;}
+.aside{
+    background: rgba(0, 0, 0, 0.3);
+    grid-area: aside;
+}
+.foot{background: rgba(0, 0, 0, 0.3);
+      grid-area: foot;
+}
+ 
+@media (min-width:500px){
+    body{
+ grid-template-columns:repeat(3,1fr) ;        
+        grid-template-areas:
+        "articule head head"
+        "articule main aside"
+        "articule main aside"
+        "articule main aside"
+        "foot foot foot";
+ 
+        
+    }
+ 
+}
+
+/*fin propiedades maquetación layaut grid*/

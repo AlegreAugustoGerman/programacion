@@ -1,0 +1,82 @@
+.section-image{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;}
+.list-img{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    
+    justify-content: center; 
+    text-align: center;
+
+    display: flex;
+}
+
+.item__list{border: solid 0.2px;
+            width: 20%;
+            }
+.titulo__item{margin: 0;}
+.descripcion__titulo{margin: 0;}
+.img__descripcion{width:40%;}
+
+/*personalizando*/
+
+.section-img{
+    display: flex;
+    flex-wrap: wrap; margin: 0;
+    
+}
+
+.list-img-1{
+    list-style: none;
+    padding: 0;margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     
+    
+}
+.item__lis-1{
+    
+    position: absolute;
+    text-align: center;
+}
+.titulo__item-1{color: white;}
+.descripcion__titulo-1{color: white;}
+.img__descripcion-1{width: 40%;}
+
+
+.list-img-2{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: flex-end;
+}
+.item__lis-2{
+    position: absolute;
+    text-align: center;
+}
+.titulo__item-2{color: white;}
+.descripcion__titulo-2{color: white;}
+.img__descripcion-2{width: 40%;}
+
+.list-img-3{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: flex-end;
+    
+     
+     
+}
+.item__list-3{
+    position: absolute;
+    text-align: center;
+    left: 10%;
+}
+.titulo__item-3{color: white;}
+.descripcion__titulo-3{color: white;}
+.img__descripcion-3{width: 40%;}

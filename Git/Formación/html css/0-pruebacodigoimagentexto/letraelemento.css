@@ -1,0 +1,22 @@
+body{
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    background: #fb4;
+     
+}
+.titulo{
+    width: 100%;
+    list-style: none;
+    display:flex;
+    flex-wrap:wrap ;
+    justify-content: space-evenly;
+    background:rgba(0, 0, 0, 0.2) ;
+ 
+}
+.titulo__elemento{
+     
+    border-left: solid 0.1px #fff;
+    color: #ffff;
+}

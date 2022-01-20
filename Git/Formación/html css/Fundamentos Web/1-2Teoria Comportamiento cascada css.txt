@@ -1,0 +1,20 @@
+teoria sobre aplicacion de propiedades sobre elementos html
+___________________________________________________________________________________________
+si especificamente un elemento tiene asignado otro valor siempre 
+lo mas especifico sobreescribe a lo mas general
+
+
+Ej: <h1 style"font-family:Arial,Verdana;">Titulo especifico sobreescribe a lo mas general</h1>
+
+
+
+Propiedad Font-size
+
+style"font-size:20px una medida  para elementos y valores? 
+medidas en texto a valores en lugar de usar pixeles se usan palabras como :
+smile,large,xxsmall,xxlarge pero si digo smaller o larger será proporcional al
+elemento padre larger mas largo que el padre  samller mas pequeño
+
+<strong style"font-size:smile></strong>
+-------------------------------------------------------------------------------------------
+

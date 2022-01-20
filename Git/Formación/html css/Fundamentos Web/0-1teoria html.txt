@@ -1,0 +1,81 @@
+Elementos: Atributos y Valores
+------------------------------------------------------------------------------------------------------|
+Que es un elemento?
+Los elementos que conforman html están formados a partir de etiquetas apertura y cierre.
+Aalgunos elementos no tienen contenido y solo es necesario etiqueta de apertura como <br>
+
+Que es un atributo?
+Permiten sumar informacion complementaria sobre los elementos cada elemento tiene atributos
+title,style,id,class pueden colocarse en cualquier elemento, todo atributo en la etiqueta de apertura
+del elemento
+
+valor
+seguido del atributo  
+
+EJEMPLO
+<elemento atributo="valor"> </elemento>
+------------------------------------------------------------------------------------------------------
+Elementos: Atributos y Valores
+
+Elementos que hacen referencia al contenido (navegador ) Elementos semanticos 
+Elementos que no tienen contenido  <br>
+Elementos no semanticos que no expresan su contenido (navegador)  como div y span como  contenedores
+------------------------------------------------------------------------------------------------------|
+POSICIONAMIENTO WEB
+Que es un meta?
+provee información sobre el documento para el navegador y robot de busqueda.
+su contenido no visible desde el navegador
+metas importantes charset,description
+------------------------------------------------------------------------------------------------------
+POSICIONAMIENTO WEB
+Elementos Semanticos 
+Que Son? se dice  elementos con referencias a palabras como :
+se que elemento <p> contiene un texto por referencia a la palabra paragraf
+h1 header one
+img image
+
+lo que no habian eran contenedores semánticos por eso usaban mucho los <div>
+ UNICAMENTE PARA CUANDO NO INTERESE SU CONTENIDO NO SEA RELEVANTE PARA EL BUSCADOR
+
+
+el header debe comunicar lo que sigue en el sitio web su contenido
+<header></header> dentro estaria titulo principal,logo,menu,nav
+<main></main> debe contener parte principal del sitio web
+<section></section> marcar algo importante dentro de un todo
+<articule><articule/> puede verse como parte independiente del todo
+------------------------------------------------------------------------------------------------------|
+ 
+es posible en un articule agregar tanto un header
+pero solo es necesario si lo que se presenta en ese articulo 
+es referente a su contenido para comprender o guiar
+servicios dentro de un lista de articulos con servicios diferentes o cursos
+
+
+-------------------------
+-----------------------------------------------------------------------------|
+
+Cuál Es La Diferencia Entre Una Ruta Absoluta Y Una Relativa?
+radica en el uso del elemento <a> su atributo href donde apunta y su comportamiento que lo define 
+otro atributo llamado target  sus valores posibles son : 
+"_self"  visualiza el contenido en la misma pestaña cambiando de sitio web
+"_blank" visualiza el contenido en otra pestaña
+
+------------------------------------------------------------------------------------------------------|
+elemento de linea <iframe> precedente de un lenguaje Ajax para poder cargar información de forma asincronica 
+cargando solo una parte de la pagina sin tener que recargarla completa se utilizan como esta definido mas abajo 
+pero actualmente unicamente utilizada para apis aplicaciones externas que utilizamos en nuestras paginas web
+
+<a href="" title="Vinculo a Marco" target="marco">mostrar marco</a>
+<iframe name="marco" style="border:none width:200px; height:200px;"> </iframe>
+
+AllowFullscreen pantalla completa video o iframe------------------------------------------------------|
+
+video en mp4
+audio en mp3
+
+<video src="" controls></video> elemento <video> 
+atributo src  y controls   direccion del video y sus controles  
+
+<audio src="" controls loop muted></audio> elemento <audio>
+atributos nuevos  loop muted    loop para que se reproduzca una y otra vez muted silenciar.
+

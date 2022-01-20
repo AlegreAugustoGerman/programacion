@@ -1,0 +1,80 @@
+Constructos (props){
+this.state={
+	cuenta:1
+	}   
+}
+onClick={()=>{
+this.setState({this.state,
+	cuenta:this.state.cuenta-1});
+}}
+
+entonces el this funciona igual con la diferencia
+de que el state estado de la variable con un indicador
+del cuando como eventos usuario.
+
+el bind entra en juego para referenciar objetos funciones
+en las clases se utiliza cuando no se está usando funcion flecha de babel
+que si hereda el this si no se utiliza función flecha y está declarado
+como funcion normal de cualquier lenguaje de programación no se entera la clase
+porque el valor del this es null  predefinido entonces utilizando bind se logra 
+referenciar por this como metodo de clase
+
+constructor(props){
+super(props);
+this.disminuir=this.bind(this);
+
+this.state={
+	cuenta:1
+	}   
+}
+
+disminuir(){}
+
+render(){
+onClick={this.disminuir.bind(this)} 
+
+
+}
+
+para mejorar un poco el orden del codigo pero tambien para saber que se 
+está utilizando limpiando mas el jsx se puede quitar el bind e inicializar desde el constructor
+
+constructor(props){
+super(props);
+
+this.disminuir=this.bind(this);
+
+this.state={
+	cuenta:1
+	}   
+}
+
+disminuir(){}
+
+render(){
+onClick={this.disminuir} 
+
+
+}
+
+
+lo mismo funcionaria sin el bind  pero con un simple cambio utilizando función flecha
+
+constructor(props){
+super(props);
+this.state={
+	cuenta:1
+	}   
+}
+
+disminuir=()=>{}
+
+render(){
+onClick={this.disminuir} 
+}
+
+esto ultimo no lo recomienda react recordar que se logra utilizando babel 
+lo recomendado es utilizar el bind desde el constructor para avisar al componente
+e imprimir el cambio actualizar la vista porque solo con el evento y la función
+console.log(this.state)
+
