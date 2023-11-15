@@ -1,0 +1,47 @@
+body{
+    display: grid;
+    grid-template-columns:12,1fr;
+    height: 100vh;
+}
+div:nth-child(1){ display: flex;}
+.bb{ display: flex; }
+
+
+div:nth-child(4){
+background: brown;
+display: flex;
+}
+
+div:nth-child(4) div:nth-child(1){
+    background: #fb4;
+    display: flex;
+    flex-direction: column;
+    }
+    div:nth-child(4) div:nth-child(2){
+        background: #4fb;
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        }    
+
+/*ORDEN RADIO GRID*/
+
+footer{
+background: chocolate;
+grid-column: span 1;
+grid-template-columns:1fr 1fr ; 
+ 
+ 
+
+}
+footer div:nth-child(1){
+    background:#fb4;
+    grid-column: span 2;
+    grid-row:  span 3;
+ 
+    }
+footer div:nth-child(2){
+    background: #4fb;
+ 
+    }
+    

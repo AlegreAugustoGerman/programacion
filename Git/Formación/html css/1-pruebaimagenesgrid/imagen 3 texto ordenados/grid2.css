@@ -1,0 +1,39 @@
+
+body{display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(12,1fr);
+}
+.contenedor{grid-column: 1/13;}
+/*align o justify con items o content con strech*/
+.lista-menu{background: #fb4;  justify-content: space-around; list-style: none;}
+.lista__elemento{}
+.lista-menu:first-of-type{display: flex;}
+.lista-menu:nth-child(2){text-align: center; }
+
+.cuerpo{background: #fb4; grid-column: 1/13;grid-gap: 1%; display: flex; }
+.seccion{background: rgba(0, 0, 0, 0.2);}
+
+.seccion-titulo{/*text-align: center;*/} /*cree --alinear-texto una clase con este estilo*/
+.imagen{width:99%; height: 50%; }
+.imagen__descripcion{/*text-align: center;*/ color: #fff;}/*podria evitarme estas clases con variable de colores*/
+.nota{position: absolute; }
+
+ 
+
+.--alinear-texto{
+text-align: center;
+} 
+.--alinearelementos{display :flex;
+    justify-content: center; 
+    align-items: center;}
+.--colorblanco{color:#fff;}
+
+.pie{/*background: #000;*/ grid-column: 1/13 ;/**el fondo negro para visualizar el contenedor y poder ver si la imagen de debajo esta centrada */
+} 
+.pie-titulo{position: absolute;}
+.pie-descripcion{position: absolute; margin-bottom: 0%;}
+.pie-imagen{width: 90%; z-index: -100;}
+.--mover{position:absolute; bottom: 0%;}
+/*intentando mover encontre la forma 
+de ordenar titulos subtitulos 
+texto en imagen*/

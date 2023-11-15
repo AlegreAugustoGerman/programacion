@@ -1,0 +1,245 @@
+:root{
+    --color-item-menu:rgba(0, 0, 0, 0.3);
+    --color-hover-color: rgba(0, 0, 0, 0.7);
+    --color-yellow:#fb4;
+    --color-white:#ffff;
+
+    --h1-font-size:2rem;
+    --h2-font-size:1.6rem;
+    --text-font-size:1.2rem;
+    --small-font-size:0.9rem;
+
+}
+/*Estilos Reutilizables*/
+@font-face {
+src:url(/ArreglandoCss/fonts/Shadows_Into_Light_Two/ShadowsIntoLightTwo-Regular.ttf);
+font-family:m;}
+@font-face {
+src:url(/ArreglandoCss/fonts/Rock_Salt/RockSalt-Regular.ttf);
+font-family:logo;}
+@font-face {
+    src:url(/ArreglandoCss/fonts/Shadows_Into_Light_Two/ShadowsIntoLightTwo-Regular.ttf);
+    font-family:item;}
+    @font-face {
+        src:url(/ArreglandoCss/fonts/Waiting_for_the_Sunrise/WaitingfortheSunrise-Regular.ttf);
+        font-family:it;}
+        @font-face {
+            src:url(/ArreglandoCss/fonts/Annie_Use_Your_Telescope/AnnieUseYourTelescope-Regular.ttf);
+            font-family:ite;}
+
+
+.text{cursor: text;}
+.flex{display: flex;}
+.wrap{flex-wrap: wrap;}
+.colum{flex-direction: column;}
+.mp{margin: 0;padding: 0;}
+.itcenter{justify-content: center;align-items: center;align-content: center;text-align: center;}
+.betwen{justify-content:space-between;}
+.evenly{justify-content:space-evenly;}
+.start{justify-content:flex-start;}
+.center{justify-content:center;} 
+.end{justify-content:flex-end;}
+.border-left{border-right: solid 0.2px var(--color-white);}
+
+
+
+body{overflow-x: hidden;}
+/*Estilos Header*/
+.header{background: var(--color-item-menu); }
+.header__nav{ }
+.header-img{
+    z-index:-1;
+    background: url(/ArreglandoCss/img/Cocina/Logo.jpg) no-repeat;
+    background-size:100% 100%;  
+
+}
+.nav__list-header{list-style: none;width: 50%;
+font-size: var(--h2-font-size);}
+
+.list__item-header{width: 20%;}
+.item__link-header{
+    text-decoration: none; 
+    color:var(--color-white);
+    font-family:item;
+     }
+.item__link-header:hover{text-decoration:underline; }
+
+
+/*Estilos Section Select*/
+.section-select{}
+.section__list-select{width: 100%;}
+.list__item-select{list-style: none; }
+.item__button-select{
+    color:var(--color-yellow); 
+    background: var(--color-item-menu);
+    border:transparent; 
+    border-right:solid 0.1px;
+
+    font-size:var(--text-font-size);}
+
+    .list__item-select:nth-child(1) .item__button-select:hover{
+        border: solid 0.1px;
+        cursor: pointer;
+    } 
+
+    .list__item-select:nth-child(2) .item__button-select:hover{
+        border: solid 0.1px;
+        cursor: pointer;
+    } 
+  
+ 
+ 
+    
+
+
+/*Estilos Section Recipes*/
+.section-recipes{color:var(--color-white);background: var(--color-item-menu);}
+.section__list{list-style: none;background: var(--color-item-menu);width: 30%;
+    border-bottom: solid 0.1px white ;margin-top: 1%;}
+
+.list__title-section{font-family:m; font-size: var(--h2-font-size);}
+ 
+.Logo{
+    font-size:var(--h1-font-size);
+    font-family:logo;
+    
+}
+
+.list__item-section{}
+.item__img-section{width: 100%;}
+.img__description-section{font-family:it;
+    font-size: var(--h2-font-size);}
+.img__link-section{text-decoration: none;
+    font-family:ite;color: var(--color-yellow);
+    font-size: var(--h2-font-size);
+}
+
+.aside{
+    border-top: solid 1px white;
+    padding-top: 4%;
+    background: var(--color-hover-color);
+}
+.principal{width: 100%;text-align: center;text-decoration: underline;}
+
+.aside__list{   
+     list-style: none;
+     background: var(--color-yellow);
+     border-bottom: solid 0.1px white ;margin-top: 1%;
+    font-size: var(--text-font-size);
+    }
+
+.aside__list:nth-child(2) .aside__link{
+        color: var(--color-white);
+        background:var(--color-item-menu) 
+        url(/ArreglandoCss/img/Cocina/kitchen-men-leason.jpg)
+        no-repeat;
+        background-size: cover;
+        }
+
+.aside__item{opacity: 0.8; border-top: solid 1px white;}
+
+.aside__list:nth-child(3) .aside__link{
+         color: var(--color-white);
+        background:var(--color-item-menu) 
+        url(/ArreglandoCss/img/Cocina/cocinandoconlava.jpg)
+        no-repeat;
+        background-size: cover;
+        
+         }
+.aside__list:nth-child(4) .aside__link{
+        color: var(--color-white);
+        background:var(--color-item-menu) 
+        url(/ArreglandoCss/img/Cocina/olive-oil-.jpg)
+        no-repeat;
+        background-size: cover;
+        
+    }
+.aside__list:nth-child(5) .aside__link{
+        color: var(--color-white);
+        background:var(--color-item-menu) 
+        url(/ArreglandoCss/img/Cocina/coctel.jpg)
+        no-repeat;
+        background-size: cover;
+        
+        }
+
+.aside__link{text-decoration: none;
+}
+.aside__title{
+    font-size:var(--h2-font-size);
+    color: var(--color-white); 
+    background:var(--color-item-menu);
+}
+
+.aside__text{color: black; 
+    background: var(--color-white); 
+}
+
+
+@media screen and (max-width: 700px){
+    .header__nav{
+    display: flex; 
+    }
+    .nav__list-header{
+    flex-direction: column; 
+    }
+    .section__list-select{
+        flex-wrap: wrap;
+        width: 80%;
+    }
+    :root{ 
+        --h1-font-size:1.2rem;
+        --h2-font-size:1rem;
+        --text-font-size:0.8rem;
+        --small-font-size:0.6rem;}
+
+    .aside__list{width: 50%;}
+    .aside__link{width: 100%;}
+}
+
+@media screen and (max-width:1024px){
+    .header__nav{
+        display: flex; 
+        }
+        .nav__list-header{
+        flex-direction: column; 
+        }
+        .section__list-select{
+            flex-wrap: wrap;
+            width: 95%;
+        }
+
+        .aside__list{width: 40%;}
+        .aside__link{width: 100%;}
+
+}
+
+@media screen and (min-width: 1026px) {
+ 
+    :root{
+    --h1-font-size:2rem;
+    --h2-font-size:1.5rem;
+    --text-font-size:1.3rem;
+    --small-font-size:1rem;
+        }
+
+        .aside__list{width: 25%;}
+        .aside__link{width: 100%;}
+        
+}
+
+@media screen and (min-width: 1420px) {
+ 
+    :root{
+    --h1-font-size:3rem;
+    --h2-font-size:2.5rem;
+    --text-font-size:2rem;
+    --small-font-size:1.8rem;
+        }
+
+        .aside__list{width: 20%;}
+        .aside__link{width: 100%;}
+        
+}
+
+    

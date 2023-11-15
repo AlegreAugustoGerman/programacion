@@ -1,0 +1,22 @@
+¿Para qué utilizamos el State en React?
+
+En esencia utilizamos el estado para hacer cambios sobre nuestro componente, 
+si recuerdas en la clase anterior, podemos hacer cambios cobre un componente en 
+React al modificar sus propiedades de entrada.
+
+Aquí es donde entra al juego el estado, ya que, si necesitamos cambiar algo en nuestro componente, 
+ya sea, por un evento, por la variable tiempo, o cualquier otra cosa, podemos utilizar el estado y 
+hacer modificaciones sin que tengamos que modificar sus propiedades.
+
+¿Cuando debemos usar Refs?
+
+Pues hay bastantes casos en que puedes utilizar las Refs, sin embargo, la librería nos expone 3 casos particulares:
+
+    Si deseas controlar el enfoque de elementos, selección de textos o en la reproducción de medios.
+    Para la activación de animaciones
+    Y la más común es la integración con bibliotecas de DOM de terceros.
+
+A pesar de que con Refs podrás hacer muchas cosas, te recomiendo que no exageres en su uso,
+ ya que estoy seguro de que podrás reemplazarlas con algo declarativo, es decir, con el uso de State.
+
+

@@ -1,0 +1,45 @@
+paso 1
+	Aprobar modelo a producir
+wireframe referencia a prototipar el sitio web 
+en cualquier programa porque son lineas o textos
+como un bosquejo a mano
+adobe xd
+photoshop
+figma.com
+	
+|-posibilidad de visualiar diseño del sitio web final
+|-analizar funcionalidades orden 
+
+	correcta estructura web
+
+paso 2
+<header>
+<nav>
+<ul>
+<li><li/>
+<ul/>
+<nav/>
+<header/>
+
+<main> contiene el cuerpo nunca el header principal
+<section>cursos,productos,<section/> 
+un section es un outline como indice 
+indicando partes importantes como contenido
+ correspondiente a todo el sitio
+
+
+<articule>algo no relacionado  
+a lo anterior<articule/>
+<main/> siempre sierra antes del footer 
+<footer>
+<a href="correo1,correo2?subject=Asunto"
+ title="vinculo correo"> correo1 </a>
+<footer/>
+
+|3- frente a problemas utilizar logica de elementos para ordenar o personalizar 
+orden de elementos   flex
+letras               font
+imagen               img,svg,icon
+
+
+

@@ -1,0 +1,33 @@
+function ComponenteContenedor(props){
+
+componentDidMount
+componentWillUnmount
+
+cambiar estado de componente mostrar ocultar declarando
+en un array const los valores  con useState inicializando en false
+debajo otra constante como condicion verdadera y en el jsx cuando 
+mostrar uno u otro
+
+const[ver,setVer]=useState(false)
+const verComponente1=()=>{serVer(!ver)}
+
+state={cuenta:1}
+
+intervalo=null;
+componentDidMount(){   //al activarse un componente
+this.intervalo=setIntervall(()=>{this.setState({cuenta:this.state.cuenta + 1})
+console.log(this.state)},1000
+}    
+componentWillUnmount(){  //al desactivarse un componente
+clearInterval(this.intervalo)
+}
+  
+return(
+<button onClick={verComponente}>{ver ? "Ocultar":"ver"}</button>
+<section>
+{ver ? (<Componente1/>):("")}
+</section>
+	);
+}
+
+

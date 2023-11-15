@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta charset="charset=iso-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content='This is an example of a meta description.'>
+    <title>Menus</title>
+    <link rel="stylesheet" href="menus.css">
+</head>
+<body>
+    <header class="conth">
+        <ol class="conth__menu">
+            <li class="conth__menu-elemento">Menú</li>
+            <li class="conth__menu-elemento">Menú</li>
+            <li class="conth__menu-elemento">Menú</li>
+            <li class="conth__menu-elemento">Menú</li>
+            <li class="conth__menu-elemento">Menú</li>
+        </ol>
+        <ol class="conth__menu">
+            <li class="conth__menu-elemento">Menú</li>
+            <li class="conth__menu-elemento">Menú</li>
+            <li class="conth__menu-elemento">Menú</li>
+            <li class="conth__menu-elemento">Menú</li>
+            <li class="conth__menu-elemento">Menú</li>
+        </ol>
+    </header>
+    <ul class="lista">
+        <li class="lista-elemento">elemento</li>
+        <li class="lista-elemento">elemento</li>
+        <li class="lista-elemento">elemento</li>
+        <li class="lista-elemento">elemento</li>
+        <li class="lista-elemento">elemento</li>
+        <li class="lista-elemento">elemento</li>
+        <li class="lista-elemento">elemento</li>
+        <li class="lista-elemento">elemento</li>
+        <li class="lista-elemento">elemento</li>
+        <li class="lista-elemento">elemento</li>
+    </ul>
+
+    <ul class="abecedario">
+       <!-- <li type="A" class="abecedario-letras"></li>-->
+        <li class="abecedario-letras">A</li>
+        <li class="abecedario-letras">B</li>
+        <li class="abecedario-letras">C</li>
+        <li class="abecedario-letras">D</li>
+        <li class="abecedario-letras">E</li>
+        <li class="abecedario-letras">F</li>
+        <li class="abecedario-letras">G</li>
+        <li class="abecedario-letras">H</li>
+        <li class="abecedario-letras">I</li>
+        <li class="abecedario-letras">J</li>
+        <li class="abecedario-letras">K</li>
+        <li class="abecedario-letras">L</li>
+        <li class="abecedario-letras">M</li>
+        <li class="abecedario-letras">N</li>
+        <li class="abecedario-letras">Ñ</li>
+        <li class="abecedario-letras">O</li>
+        <li class="abecedario-letras">P</li>
+        <li class="abecedario-letras">Q</li>
+        <li class="abecedario-letras">R</li>
+        <li class="abecedario-letras">S</li>
+        <li class="abecedario-letras">T</li>
+        <li class="abecedario-letras">U</li>
+        <li class="abecedario-letras">V</li>
+        <li class="abecedario-letras">W</li>
+        <li class="abecedario-letras">X</li>
+        <li class="abecedario-letras">Y</li>
+        <li class="abecedario-letras">Z</li>
+    </ul>
+    <ul class="menuuno" >  
+        <li type="I" class="menuuno-elemento"></li>
+        <li type="I" class="menuuno-elemento"></li>
+        <li type="I" class="menuuno-elemento"></li>
+        <li type="I" class="menuuno-elemento"></li>
+        <li type="I" class="menuuno-elemento"></li>
+        <li type="I" class="menuuno-elemento"></li>
+        <li type="I" class="menuuno-elemento"></li>
+        <li type="I" class="menuuno-elemento"></li>
+        <li type="I" class="menuuno-elemento"></li>
+        <li type="I" class="menuuno-elemento"></li>
+    </ul>
+    
+    <!--estructora correcta sin embargo no 
+    funciona de ninguna de las dos maneras
+    por selectores y pseudoclases en css-->
+    <input type="checkbox" id="btn-menu">NoFuncional
+    <label for="btn-menu"> 
+        <img src="C:\wamp64\www\WEB\R\svg\menu.svg" >
+    </label>
+    <ul class="menu">
+        <li><a href="">Menú</a></li>
+        <li><a href="">Menú</a></li>
+        <li><a href="">Menú</a></li>
+        <li><a href="">Menú</a></li>
+        <li><a href="">Menú</a></li>
+    </ul>
+     <!--sin ninguna razon esto funciona correctamente
+    --> 
+    <label for="button_menu">Funcional Mostrar menu</label>
+    <input type="checkbox" id="button_menu" />
+    <div id="menu" class="menu">
+        
+        <li><a href="">Menú</a></li>
+        <li><a href="">Menú</a></li>
+        <li><a href="">Menú</a></li>
+        <li><a href="">Menú</a></li>
+        <li><a href="">Menú</a></li>
+    </div>
+    <ol class="cont">
+        <ul class="cont__lista">
+            <li class="cont__lista--item">elemento</li>
+            <li class="cont__lista--item">elemento</li>
+            <li class="cont__lista--item">elemento</li>
+            <li class="cont__lista--item">elemento</li>
+            <li class="cont__lista--item">elemento</li>
+        </ul>
+        <ul class="cont__lista">
+            <li class="cont__lista--item">elemento</li>
+            <li class="cont__lista--item">elemento</li>
+            <li class="cont__lista--item">elemento</li>
+            <li class="cont__lista--item">elemento</li>
+            <li class="cont__lista--item">elemento</li>
+        </ul>
+        <ul class="cont__lista">
+            <li class="cont__lista--item">elemento</li>
+            <li class="cont__lista--item">elemento</li>
+            <li class="cont__lista--item">elemento</li>
+            <li class="cont__lista--item">elemento</li>
+            <li class="cont__lista--item">elemento</li>
+        </ul>
+    </ol>
+
+    <ol class="cont1">
+        <ul class="cont__lista1">
+            <li class="cont__lista--item1">elemento</li>
+            <li class="cont__lista--item1">elemento</li>
+            <li class="cont__lista--item1">elemento</li>
+            <li class="cont__lista--item1">elemento</li>
+            <li class="cont__lista--item1">elemento</li>
+        </ul>
+        <ul class="cont__lista1">
+            <li class="cont__lista--item1">elemento</li>
+            <li class="cont__lista--item1">elemento</li>
+            <li class="cont__lista--item1">elemento</li>
+            <li class="cont__lista--item1">elemento</li>
+            <li class="cont__lista--item1">elemento</li>
+        </ul>
+        <ul class="cont__lista1">
+            <li class="cont__lista--item1">elemento</li>
+            <li class="cont__lista--item1">elemento</li>
+            <li class="cont__lista--item1">elemento</li>
+            <li class="cont__lista--item1">elemento</li>
+            <li class="cont__lista--item1">elemento</li>
+        </ul>
+    </ol>
+
+    <div class="wrapper">
+        <div class="one">One</div>
+        <div class="two">Two</div>
+        <div class="three">Three</div>
+        <div class="four">Four</div>
+        <div class="five">Five</div>
+        <div class="six">Six</div>
+      </div>
+
+      <ol class="galleryContainer">
+          <ul class="galleryContainer__list">
+              <li class="galleryContainer__list--element"> <h3 class="galleryContainer__list--title">imagen</h3> <p class="galleryContainer__list--txt">Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. modi vitae!</p> <img src="/img/1.jpg" class="galleryContainer__list--img"><!--<h3 class="galleryContainer__list--title">imagen</h3>--> </li>
+              <li class="galleryContainer__list--element"> <h3 class="galleryContainer__list--title">imagen</h3> <p class="galleryContainer__list--txt">Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. modi vitae!</p> <img src="/img/2.jpg" class="galleryContainer__list--img"><!--<h3 class="galleryContainer__list--title">imagen</h3>--> </li>
+              <li class="galleryContainer__list--element"> <h3 class="galleryContainer__list--title">imagen</h3> <p class="galleryContainer__list--txt">Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. modi vitae!</p> <img src="/img/3.jpg" class="galleryContainer__list--img"><!--<h3 class="galleryContainer__list--title">imagen</h3>--> </li>
+              <li class="galleryContainer__list--element"> <h3 class="galleryContainer__list--title">imagen</h3> <p class="galleryContainer__list--txt">Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. modi vitae!</p> <img src="/img/4.jpg" class="galleryContainer__list--img"><!--<h3 class="galleryContainer__list--title">imagen</h3>--> </li>
+              <li class="galleryContainer__list--element"> <h3 class="galleryContainer__list--title">imagen</h3> <p class="galleryContainer__list--txt">Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. modi vitae!</p> <img src="/img/5.jpg" class="galleryContainer__list--img"><!--<h3 class="galleryContainer__list--title">imagen</h3>--> </li>
+              <li class="galleryContainer__list--element"> <h3 class="galleryContainer__list--title">imagen</h3> <p class="galleryContainer__list--txt">Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. modi vitae!</p> <img src="/img/6.jpg" class="galleryContainer__list--img"><!--<h3 class="galleryContainer__list--title">imagen</h3>--> </li>
+          </ul>
+          <ul class="galleryContainer__list">
+              <li class="galleryContainer__list--element"> <h3 class="galleryContainer__list--title">imagen</h3> <p class="galleryContainer__list--txt">Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. modi vitae!</p> <img src="/img/1.jpg" class="galleryContainer__list--img"><!--<h3 class="galleryContainer__list--title">imagen</h3>--> </li>
+              <li class="galleryContainer__list--element"> <h3 class="galleryContainer__list--title">imagen</h3> <p class="galleryContainer__list--txt">Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. modi vitae!</p> <img src="/img/2.jpg" class="galleryContainer__list--img"><!--<h3 class="galleryContainer__list--title">imagen</h3>--> </li>
+              <li class="galleryContainer__list--element"> <h3 class="galleryContainer__list--title">imagen</h3> <p class="galleryContainer__list--txt">Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. modi vitae!</p> <img src="/img/3.jpg" class="galleryContainer__list--img"><!--<h3 class="galleryContainer__list--title">imagen</h3>--> </li>
+              <li class="galleryContainer__list--element"> <h3 class="galleryContainer__list--title">imagen</h3> <p class="galleryContainer__list--txt">Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. modi vitae!</p> <img src="/img/4.jpg" class="galleryContainer__list--img"><!--<h3 class="galleryContainer__list--title">imagen</h3>--> </li>
+              <li class="galleryContainer__list--element"> <h3 class="galleryContainer__list--title">imagen</h3> <p class="galleryContainer__list--txt">Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. modi vitae!</p> <img src="/img/5.jpg" class="galleryContainer__list--img"><!--<h3 class="galleryContainer__list--title">imagen</h3>--> </li>
+              <li class="galleryContainer__list--element"> <h3 class="galleryContainer__list--title">imagen</h3> <p class="galleryContainer__list--txt">Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. modi vitae!</p> <img src="/img/6.jpg" class="galleryContainer__list--img"><!--<h3 class="galleryContainer__list--title">imagen</h3>--> </li>
+          </ul>
+          <ul class="galleryContainer__list">
+            <li class="galleryContainer__list--element"> <h3 class="galleryContainer__list--title">imagen</h3> <p class="galleryContainer__list--txt">Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. modi vitae!</p> <img src="/img/1.jpg" class="galleryContainer__list--img"><!--<h3 class="galleryContainer__list--title">imagen</h3>--> </li>
+            <li class="galleryContainer__list--element"> <h3 class="galleryContainer__list--title">imagen</h3> <p class="galleryContainer__list--txt">Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. modi vitae!</p> <img src="/img/2.jpg" class="galleryContainer__list--img"><!--<h3 class="galleryContainer__list--title">imagen</h3>--> </li>
+            <li class="galleryContainer__list--element"> <h3 class="galleryContainer__list--title">imagen</h3> <p class="galleryContainer__list--txt">Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. modi vitae!</p> <img src="/img/3.jpg" class="galleryContainer__list--img"><!--<h3 class="galleryContainer__list--title">imagen</h3>--> </li>
+            <li class="galleryContainer__list--element"> <h3 class="galleryContainer__list--title">imagen</h3> <p class="galleryContainer__list--txt">Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. modi vitae!</p> <img src="/img/4.jpg" class="galleryContainer__list--img"><!--<h3 class="galleryContainer__list--title">imagen</h3>--> </li>
+            <li class="galleryContainer__list--element"> <h3 class="galleryContainer__list--title">imagen</h3> <p class="galleryContainer__list--txt">Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. modi vitae!</p> <img src="/img/5.jpg" class="galleryContainer__list--img"><!--<h3 class="galleryContainer__list--title">imagen</h3>--> </li>
+            <li class="galleryContainer__list--element"> <h3 class="galleryContainer__list--title">imagen</h3> <p class="galleryContainer__list--txt">Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. modi vitae!</p> <img src="/img/6.jpg" class="galleryContainer__list--img"><!--<h3 class="galleryContainer__list--title">imagen</h3>--> </li>
+        </ul>
+        <ul class="galleryContainer__list">
+            <li class="galleryContainer__list--element"> <h3 class="galleryContainer__list--title">imagen</h3> <p class="galleryContainer__list--txt">Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. modi vitae!</p> <img src="/img/1.jpg" class="galleryContainer__list--img"><!--<h3 class="galleryContainer__list--title">imagen</h3>--> </li>
+            <li class="galleryContainer__list--element"> <h3 class="galleryContainer__list--title">imagen</h3> <p class="galleryContainer__list--txt">Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. modi vitae!</p> <img src="/img/2.jpg" class="galleryContainer__list--img"><!--<h3 class="galleryContainer__list--title">imagen</h3>--> </li>
+            <li class="galleryContainer__list--element"> <h3 class="galleryContainer__list--title">imagen</h3> <p class="galleryContainer__list--txt">Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. modi vitae!</p> <img src="/img/3.jpg" class="galleryContainer__list--img"><!--<h3 class="galleryContainer__list--title">imagen</h3>--> </li>
+            <li class="galleryContainer__list--element"> <h3 class="galleryContainer__list--title">imagen</h3> <p class="galleryContainer__list--txt">Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. modi vitae!</p> <img src="/img/4.jpg" class="galleryContainer__list--img"><!--<h3 class="galleryContainer__list--title">imagen</h3>--> </li>
+            <li class="galleryContainer__list--element"> <h3 class="galleryContainer__list--title">imagen</h3> <p class="galleryContainer__list--txt">Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. modi vitae!</p> <img src="/img/5.jpg" class="galleryContainer__list--img"><!--<h3 class="galleryContainer__list--title">imagen</h3>--> </li>
+            <li class="galleryContainer__list--element"> <h3 class="galleryContainer__list--title">imagen</h3> <p class="galleryContainer__list--txt">Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. modi vitae!</p> <img src="/img/6.jpg" class="galleryContainer__list--img"><!--<h3 class="galleryContainer__list--title">imagen</h3>--> </li>
+        </ul>
+      </ol>
+
+</body> 
+
+</html>

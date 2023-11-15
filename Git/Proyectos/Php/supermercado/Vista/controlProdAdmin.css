@@ -1,0 +1,79 @@
+body{
+    padding: 0;
+    margin: 0;
+    width: 100%; 
+    height:100vh;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+ 
+justify-content: center;
+    background: rgba(112, 198, 191, 0.65);
+       
+    }
+    .carniceria__titulo{
+      width: 100%;
+       letter-spacing: 0.4px;
+     font-style: italic;
+     text-transform: capitalize;
+     color:#fff;
+      text-align: center;
+      font-size: 200%;
+      text-decoration: underline #fff;
+      background:rgba(0,0,0,0.2); 
+      margin-top:5%;
+      
+    }
+    .cont_lista-carniceria{
+        background: rgba(48, 35, 35, 0.3);
+        max-width:100%;
+        border:solid 0.1px #fff; 
+    padding: 2%;
+    
+    
+    }
+    .carniceria__lista{
+      
+    color:#fff;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border: solid 0.1px #000;
+    text-align: center;
+    }
+    
+    .lista__item-carniceria{
+    border: solid 0.1px #fff;
+    border-bottom:solid 0.1px #cccc; 
+    }
+    .carniceria__link-comprar{text-decoration:none;color:#fff;}
+    .carniceria__link-comprar:hover{background:rgba(0,0,0,0.7); 
+      padding-left: 25%;padding-right: 25%}
+    .carniceria__link-comprar:active{transform: scale(2);}
+    
+ 
+    .lista__item-carniceria img{ width:200px;}
+
+
+    .cont-admin{}
+
+.admin-menu{margin: 0;padding:2%;list-style: none;
+    display: flex;  justify-content: space-evenly;  
+ width: 100%;
+}
+
+.menu__item-admin{
+padding: 0;
+flex:1 1 25%;
+ 
+ 
+}
+
+.item__link-admin{
+    text-decoration:none;
+    color:#fff;
+    background:rgba(0,0,0,0.3);
+        padding: 5% 25% 5% 25% ;      
+}
+
+.item__link-admin:active{background:rgba(0,0,0,0.6);}

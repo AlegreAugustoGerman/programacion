@@ -1,0 +1,121 @@
+:root{--bg-image-form:url(/-2-BackEnd/Supermercado/imagenes/loquenecesitas.jpg);;
+}
+body{ 
+display: flex;
+justify-content: center;
+ 
+margin: 0;
+background-image: var(--bg-image-form);
+flex-wrap: wrap;
+background-size: cover;
+background-repeat: no-repeat;
+object-fit: contain; 
+ 
+
+background: -moz-linear-gradient(45deg, rgba(58,28,113,1) 0%, rgba(201,103,113,1) 50%, rgba(255,175,123,1) 100%); /* ff3.6+ */
+background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(58,28,113,1)), color-stop(50%, rgba(201,103,113,1)), color-stop(100%, rgba(255,175,123,1))); /* safari4+,chrome */
+background: -webkit-linear-gradient(45deg, rgba(58,28,113,1) 0%, rgba(201,103,113,1) 50%, rgba(255,175,123,1) 100%); /* safari5.1+,chrome10+ */
+background: -o-linear-gradient(45deg, rgba(58,28,113,1) 0%, rgba(201,103,113,1) 50%, rgba(255,175,123,1) 100%); /* opera 11.10+ */
+
+}
+  
+.Account__title{
+                
+                letter-spacing: 0.1em;
+                font-style: oblique;
+                font-style: italic;
+                font-weight: lighter;
+                text-decoration: underline #fff;
+
+                background: linear-gradient(to bottom right,
+                white,#fb4 100%);
+            
+                border-top-left-radius: 20%;
+                border-top-right-radius:50%;
+                border-left: solid 0.1px;
+                border-bottom-left-radius:50%;
+                }
+ 
+.section-Account{
+padding:1%;
+display: flex;
+flex-wrap: wrap;
+width: 40%;
+height: 90%;
+justify-content: center;
+opacity: 0.6;
+background-image: var(--bg-image-form);
+
+background-size: cover;
+background-repeat: no-repeat;
+object-fit: contain;
+}
+ 
+.Create__item{
+    width: 90%;
+    margin:1%;
+    padding:3%;
+    text-align:center;}
+
+.Create__item-select{
+    width: 97%;
+    margin:1%;
+    padding:3%;
+    text-indent: 20%;
+}
+
+.Create__item-select-fechnac{
+    width: 90%;
+    margin:1%;
+    padding:3%;
+    text-align: center;
+    text-indent:5%;
+}
+
+
+.Create__item-select-enviar{
+   
+    width: 97%;
+    margin:1%;
+    padding:3%; }
+
+.Create__item-select-enviar:hover{
+    transform: scale(1.1);
+}
+
+.form__fondo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 110vh;
+    margin: 0;
+    padding: 0;
+    width: 100%; z-index: -1;
+    opacity: 0.7;
+    background: rgba(0,0,0,0.5);
+}
+
+@media(max-width:1004px){
+    .section-Account{width: 48%;}
+    .Account__title{width: 35%;}
+    .form__fondo{height:88vh;}
+    #footer-usercreate{position: absolute; top:86%;}
+}
+@media(width:1280px){
+    .section-Account{width: 36%;}
+   .Account__title{width: 50%; text-align: center;}
+   .form__fondo{height:125vh;}
+   #footer-usercreate{position: absolute; top:100%;}   
+}
+@media(width:1440px){
+    .section-Account{width: 48%;}
+   .Account__title{width: 60%; text-align: center;}
+   .form__fondo{height:88vh;}
+   #footer-usercreate{position: absolute; top:86%;}   
+}
+@media(width:1920px){
+    .section-Account{width: 20%;}
+   .Account__title{width: 20%; text-align: center;}
+   .form__fondo{height:88vh;}
+   #footer-usercreate{position: absolute; top:86%;}   
+}

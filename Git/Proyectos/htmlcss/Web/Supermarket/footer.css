@@ -1,0 +1,21 @@
+.footer  { 
+    width: 100%;
+    text-align: center;
+    background: #333333;
+    color: #fff;  
+   /*display: flex;
+     flex-wrap: wrap;
+     justify-content:space-evenly;*/
+}           
+.footer  [class^="icon-"] {
+    padding: 2%;
+    color: #333;
+    text-decoration: none;
+
+    font-size: 2.5em;
+    background: white;
+
+    border-radius: 50%;
+    width: 10%;
+    height: 10%;    
+  }

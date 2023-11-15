@@ -1,0 +1,446 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 28/03/2020, 13:52:14
+    Author     : l2k49
+*/
+
+* { 
+    box-sizing: border-box;}
+
+    h1, h2, h3,h4, h5, h6 {
+        font-family: 'yanone kaffeesatz', sans-serif;
+        letter-spacing: 1.5px;}
+
+    
+
+        body {
+            height: 100vh;
+ 
+            background: -moz-linear-gradient(45deg, rgba(58,28,113,1) 0%, rgba(201,103,113,1) 50%, rgba(255,175,123,1) 100%); /* ff3.6+ */
+            background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(58,28,113,1)), color-stop(50%, rgba(201,103,113,1)), color-stop(100%, rgba(255,175,123,1))); /* safari4+,chrome */
+            background: -webkit-linear-gradient(45deg, rgba(58,28,113,1) 0%, rgba(201,103,113,1) 50%, rgba(255,175,123,1) 100%); /* safari5.1+,chrome10+ */
+            background: -o-linear-gradient(45deg, rgba(58,28,113,1) 0%, rgba(201,103,113,1) 50%, rgba(255,175,123,1) 100%); /* opera 11.10+ */
+    }
+ 
+
+ header{
+     cursor: pointer;
+     text-align: center;
+     width: 100%;
+      
+     background: #ffbb44;
+ }
+ #btn-menu{
+     display: none;
+    
+ }
+ header label {
+     display: none;
+     width: 30px;
+     height: 30px;
+     padding: 10px;
+     border-right:1px solid #fff;
+
+ }
+ header label:hover{
+     cursor:pointer;
+     background: rgba(0,0,0,0.3);
+ }
+ .menu ul{
+     margin:0;
+     list-Style:none;
+     padding:0;
+     display: flex;
+     flex-direction: row;
+    /* flex-direction: row;*/
+    /*flex-direction: column;*/
+ }
+ .menu li{
+     flex-grow:1;
+     border-right: 1px solid #fff;
+ }
+ .menu li:hover{
+     background: rgba(0,0,0,0.3);
+ }
+ .menu li a {
+     display: block;
+     padding: 15px 20px;
+     color:#fff;
+     text-decoration: none;
+
+ }
+ @media (max-width:768px){
+     header label{
+         display:block;
+     }
+     .menu{
+         position: absolute;
+         background: #ffbb44;
+         width: 70%;
+         margin-left: -80%;
+         transition: all 1.s;}
+     .menu ul {
+        /*flex-direction: column;*/
+        flex-direction: row;
+     }
+     .menu li {
+         border-top: 1px solid #fff;
+     }
+     #btn-menu:checked ~ .menu {
+        margin: 0;
+     }
+    
+
+ }
+ 
+ .form-register{
+     text-align: center;
+     width: 95%;
+     max-width: 500px;
+     margin: auto;
+     background: white;
+     border-radius: 7px;
+ }
+ .form__titulo{
+    background: deepskyblue;
+    color: #fff;
+    padding: 20px;
+    font-weight: 100;
+    font-size: 30px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom: 5px solid crimson;
+ }
+ .contenedor-inputs{
+     padding: 10px 30px;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;  /*separabdi inputs dentro de contenedor*/
+ }
+ input{
+     margin-bottom:15px;
+     padding: 15px;
+     font-size: 16px;
+     border-radius: 3px;
+     border: 1px solid darkgray;
+ }
+ .input-48{
+     width: 48%;
+ }
+ .input-100{
+     width: 100%;
+ }
+ .btn-enviar{
+     background: crimson;
+     color: #fff;
+     margin: auto;
+     padding: 10px 40px;
+     font-size: 20px;
+ }
+ .btn-enviar:active{
+     transform: scale(1.05);
+ }
+ .form__link{
+     width: 100%;
+     margin:7px;
+      
+     font-size: 14px;
+ }
+
+ .logo{
+     
+     width: 100%;
+     min-width: 10%;
+ }
+
+ 
+
+ .slider {
+     
+    max-width:100%;
+    max-height: 100%;
+    min-width: 20%;
+    min-height: 20%;
+
+    margin: auto;
+    overflow: hidden;
+    
+    }
+    .slider ul{
+        list-style: none;
+        display: flex;
+        padding: 0;
+        width: 400%;
+    
+        animation: cambio 20s infinite;
+    }
+    .slider h4 {
+        
+        border: solid 1px;
+        color:white;
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+         
+        
+    }
+ 
+    .slider img {
+             width: 100%;   
+             height: 50%;
+             z-index: -1000;
+            }
+
+    @keyframes cambio {
+    0% {margin-left:0;}
+    20% {margin-left:0;}
+    
+    30% {margin-left:-100;}
+    40% {margin-left:-100%;}
+    
+    50% {margin-left:-200%;}
+    60% {margin-left:-200%;}
+    
+    70% {margin-left:-200%;}
+    80% {margin-left:-200%;}
+    
+    90% {margin-left:-300%;}
+    97% {margin-left:-300%;}
+     
+    }
+    
+    #subtitulos{
+        
+        text-align: center;
+        letter-spacing: 5.6px;
+        word-spacing: 1.4px;
+        color: #000000;
+        font-weight: 400;
+    
+        font-style: italic;
+        font-variant: small-caps;
+        text-transform: capitalize;
+        align-content: center;
+    }
+
+    
+    /*estilo footer*/
+    
+            footer  {
+               
+                
+                width: 100%;
+                text-align: center;
+                background: #333333;
+                color: #fff;
+                padding: 10px;
+                min-height: calc(100vh -25% -50%);
+                
+                
+            }           
+            footer  [class^="icon-"] {
+          
+                display: inline-block;
+                color: #333;
+                text-decoration: none;
+                font-size: 35px;
+                padding: 2px;
+                background: white;
+                border-radius: 50%;
+                
+                width: 50px;
+                height: 50px;
+                 
+                line-height: 40px;
+              }
+    
+              .foterrr{
+                  position: absolute;
+                  transform: translateY(-55%)
+    
+              }
+              .galeria{
+                
+                width: 100%;
+              
+                margin: auto;
+                list-style: none;
+                padding: 20px;
+                box-sizing: border-box;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+              }
+
+              .galeria li {
+                  margin: 5px;
+              
+                  border: solid   rgba(0, 0, 0, 0.8) 1px;
+                   
+              }
+              .galeria img {
+                  width: 150px;
+                  height: 100px;
+              }
+              .modal{
+                  /*display: none;
+                  visibility: hidden;
+                  opacity: 0;*/
+                  position: absolute;
+                  left: -100%;
+              }
+              .modal:target{
+                  /*visibility: visible;
+                  opacity: 1;*/
+                  transition: all 1s;
+                  display: block;
+                  position: fixed;
+                  background: rgba(0, 0, 0, 0.8);
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+              }
+              .modal h3{
+                  color: #fff;
+                  font-size: 30px;
+                  text-align: center;
+                  margin: 15px 0;
+              }
+              .imagen{
+                  width: 100%;
+                  height: 50%;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+              }
+
+
+              .imagen a{
+                  color: #fff;
+                  font-size: 40px;
+                  text-decoration: none;
+                  margin: 0 10px;
+              }
+
+              .imagen a:nth-child(2){
+                  margin: 0;
+                  height: 100%;
+                  flex-shrink:2 ;
+              }
+                            /*.imagen a:nth-child(3):target{ cuando click derecha > venga de la derecha por backend con html
+                position: absolute;
+                right: -100%;
+              }*/
+              .imagen img{
+                  width: 500px;
+                  height: 100%;
+                  max-width: 100%;
+                  border: 7px solid #fff;
+                  box-sizing: border-box;
+              }
+              .cerrar {
+                  display: block;
+                  background: #fff;
+                  width: 25px;
+                  height: 25px;
+                  margin: auto;
+                  text-align: center;
+                  text-decoration: none;
+                  padding: 4px;
+                  font-size: 24px;
+                  color: #000;
+                  border-radius: 50%;
+                  line-height: 15px;
+              }
+
+              .imagen__Descricion{
+                text-align: center;
+                letter-spacing: 0.0px;
+                word-spacing: 0.0px;
+                color: #000000;
+                font-weight: 10;
+                font-style: italic;
+                align-content: center;
+                 border: solid 1px;
+              }
+              .imagen__Titulo{
+                text-align: center;
+                letter-spacing: 5.6px;
+                word-spacing: 1.4px;
+                color: #000000;
+                font-weight: 400;
+            
+                font-style: italic;
+                font-variant: small-caps;
+                text-transform: capitalize;
+                align-content: center;
+                color:white; 
+                border: solid 1px; 
+              }
+              .body{
+                  margin: 0;
+                  min-height: 100vh;
+                  background-image: url(img/actividades/camel-4785794_1280.jpg);
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  background-position: center;
+                  background-attachment: fixed;
+                  opacity: 0.7;
+
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+              }
+              .body:before {
+                  content: "";
+                  width: 100%;
+                  min-height: 100vh;
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+
+                  background:linear-gradient(90deg, #52c4df, #ad55c1);
+
+                  opacity: 0.7;
+                  z-index: -1;
+
+              }
+              .body h1 {
+                color: white;
+                font-family: italic;
+              }
+
+
+              .banner{
+                  width: 700px;
+                  height: 300px;
+                  border: 3px solid red;
+                  margin: auto;
+
+                 /* background-image: url(img/airport-2373727_1280.jpg);*/
+
+                  background-size: 100% 100%;
+
+                  /*animation-name: banner;   esto resumido
+                  animation-duration: 10s;
+                  animation-iteration-count:infinite ;*/
+                  animation: banner 10s infinite ;/*resumen*/
+
+              }
+
+              @keyframes banner {
+              0%, 30%{background-image: url(img/airport-2373727_1280.jpg);
+              opacity: 1;
+            } 31%,34% {opacity: 0.1;}
+              35%,65%{background-image: url(img/luggage-3297015_1280.jpg);
+              opacity: 1;
+            }66%,69%  {opacity: 0.1;}
+              70%,94% {background-image: url(img/actividades/camel-4785794_1280.jpg);
+              opacity: 1;}
+              95%,100%{opacity:0.1;}  
+            }

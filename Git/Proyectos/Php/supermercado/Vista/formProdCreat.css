@@ -1,0 +1,64 @@
+.bloque-espaciado-input{
+    padding-top:1%;
+    padding-bottom: 1%;
+    margin-top: 1%;
+    text-align: center;
+}
+body{background:#fb4;padding: 0; margin: 0;}
+
+.Section-cont-Productos{text-align: center;
+    display: flex; flex-wrap: wrap;
+    justify-content: center;
+    }
+
+
+.Section__titulo-Productos{
+    padding: 0; margin-top: 5%;
+    font-style: italic;width: 100%;
+    font-weight: 10; font-style: oblique; 
+    text-decoration: overline;
+    border-bottom: solid 0.1px;
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    padding-top:2%;
+}
+
+     
+
+.Section__form-Productos{
+background: rgba(0, 0, 0,0.3);
+color: transparent;
+width: 100%;
+padding-top:2%;
+padding-bottom:2%;
+flex-wrap: wrap;
+width: 60%;
+border: solid 1.5px #fff;
+border-radius: 4%;
+opacity: 0.7;
+ 
+
+}
+.form__input-producto-imagen{width: 60%; 
+    text-indent: 13%;
+    margin-top: 2%;}
+     
+
+.form__input-producto{width: 90%; }
+.form__select-fecha{width: 91%;text-indent: 7%; }
+.form__select-producto{width: 92.4%; text-indent: 0%;}
+
+.form__submit-producto{width: 40%;}
+.form__submit-producto:hover{cursor: pointer;
+     transform: scale(1.1);}
+.form__submit-producto:active{transform: scale(20);
+background:rgba(0, 0, 0, 0.7);}
+ 
+.section__cont__fondo-form{
+width: 100%;
+height: 100vh;
+position: absolute;
+top: 0;
+left:0;
+z-index: -1;
+background: #000; opacity: 0.7;}

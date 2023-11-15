@@ -1,0 +1,33 @@
+tipografias predeterminada es times new roman
+
+propiedades css  
+selector {propiedad:valor;}
+selector tipos 
+selector de etiqueta por el nombre del elemento al cual afecta
+
+----------------------------------------------------------------------------------------
+|-font-family propiedad para modificar tipografias funetes confiables por estar instaladas en so mas populares 
+Arial,Verdana,sans-serif si no tiene arial con la , toma la segunda tipografia
+----------------------------------------------------------------------------------------
+Pseudoclases sirven para cambiar caracteristicas
+predeterminadas por css de un elemento html
+
+:link vinculos no visitados
+:visited cuando lo visito
+:hover cuando le paso el mouse por arriba
+:active cuando le hago click
+----------------------------------------------------------------------------------------
+Propiedad background
+
+valor predeterminado es repeat por eso al usar 
+background-image es importante aclarar el comportamiento
+con background-repeat,
+
+background-image(rutaimagen);
+background-repeat:valor;//repeat,no repeat, repeat x,y
+background-color:color;
+
+-----------------------------------------------------------------------------------------
+medidas em y rem 
+em es referente a su contenedor padre sus medidas en cuanto a px pudiendo ser n°px
+rem es referente al raiz que si no configuramos nada sera igual a el body 

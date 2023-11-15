@@ -1,0 +1,81 @@
+:root{--bg-image-form:url(/img/Super/loquenecesitas.jpg);
+}
+body{ 
+display: flex;
+background: url(/img/Super/loquenecesitas.jpg) no-repeat;     
+background-size: 100% 100%;
+z-index: -1;
+}
+
+.Account__title{
+                
+                letter-spacing: 0.1em;
+                font-style: oblique;
+                font-style: italic;
+                font-weight: lighter;
+                text-decoration: underline #fff;
+
+                background: linear-gradient(to bottom right,
+                white,#fb4 100%);
+            
+                border-top-left-radius: 20%;
+                border-top-right-radius:50%;
+                border-left: solid 0.1px;
+                border-bottom-left-radius:50%;
+                text-align: center;
+                width: 50%;
+                align-items: center;
+                }
+ 
+.section-Account{
+ 
+padding:1%;
+background: rgba(0, 0, 0, 0.3);
+ 
+width: 40%;
+height: 90%;
+justify-content: center;
+opacity: 0.6;
+background-image: var(--bg-image-form);
+
+background-size: cover;
+background-repeat: no-repeat;
+object-fit: contain;
+}
+ 
+.Account-Create__item{
+    width: 90%;
+    margin:1%;
+    padding:3%;
+    text-align:center;}
+
+.Account-Create__item-select{
+    width: 97%;
+    margin:1%;
+    padding:3%;
+    text-indent: 40%;
+}
+
+.Account-Create__item-select-fechnac{
+    width: 90%;
+    margin:1%;
+    padding:3%;
+    text-align: center;
+    text-indent:15%;
+}
+
+
+.Account-Create__item-select-enviar{
+   
+    width: 97%;
+    margin:1%;
+    padding:3%; }
+
+.Account-Create__item-select-enviar:hover{
+    transform: scale(1.1);
+}
+
+ 
+
+
+ 
